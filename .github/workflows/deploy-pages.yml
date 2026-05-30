@@ -27,11 +27,6 @@ jobs:
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
-        with:
-          # Enable Pages via the API if it isn't already, and set the
-          # build source to "GitHub Actions". Removes the need for the
-          # manual Settings -> Pages toggle.
-          enablement: true
 
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3
