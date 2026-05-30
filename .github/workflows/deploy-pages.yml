@@ -5,6 +5,7 @@ on:
     branches:
       - main
       - claude/kind-babbage-ewu8j
+      - claude/wizardly-ritchie-mcMrl
   workflow_dispatch:
 
 permissions:
@@ -18,10 +19,7 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -29,6 +27,11 @@ jobs:
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
+        with:
+          # Enable Pages via the API if it isn't already, and set the
+          # build source to "GitHub Actions". Removes the need for the
+          # manual Settings -> Pages toggle.
+          enablement: true
 
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3
@@ -36,6 +39,13 @@ jobs:
           # The site is plain static files served from the repo root
           path: .
 
+  deploy:
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
