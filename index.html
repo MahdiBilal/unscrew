@@ -1,728 +1,239 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-<meta name="theme-color" content="#0a0a0a" />
-<title>Unicrew Socials — Premium social media, built the way films are built.</title>
-<meta name="description" content="Unicrew Socials is a Dubai-based creative production house running film-grade social media for premium UAE brands. Strategy, production, publishing — fully managed." />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="styles.css" />
-<link rel="icon" href="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230a0a0a'/%3E%3Ctext x='50%25' y='58%25' font-family='Inter,sans-serif' font-size='16' font-weight='700' fill='white' text-anchor='middle'%3EUS%3C/text%3E%3Crect x='22' y='6' width='4' height='4' fill='%23ff2a2a'/%3E%3C/svg%3E" />
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UNICREW SOCIALS — Company Profile</title>
+<meta name="description" content="UNICREW SOCIALS — a cinematic social-content studio turning products into desire, brands into stories, and attention into demand across the Gulf.">
+<meta name="theme-color" content="#100D09">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23100D09'/%3E%3Ctext x='50%25' y='59%25' font-family='Anton,Impact,sans-serif' font-size='15' fill='%23F3EEE4' text-anchor='middle'%3EUS%3C/text%3E%3Crect x='23' y='6' width='4' height='4' fill='%23A8211C'/%3E%3C/svg%3E">
 </head>
 <body>
+<div class="grain"></div><div class="progress" id="progress"></div>
+<div class="cur" id="cur"></div><div class="cur-d" id="curd"></div>
 
-<!-- LOADER -->
-<div id="loader" aria-hidden="true">
-  <div class="loader-stage">
-    <div class="loader-bar"><span></span></div>
-    <div class="loader-meta">
-      <span class="loader-tag">UNICREW FZE</span>
-      <span class="loader-count" data-count>00</span>
-    </div>
-    <div class="loader-credit">A Production House Loading</div>
+<!-- INTRO LOADER -->
+<div class="loader" id="loader" aria-hidden="true">
+  <div class="loader-in">
+    <div class="loader-logo"><span class="lw">UNICREW</span><span class="ls"><i></i>SOCIALS<i></i></span></div>
+    <div class="loader-bar"><span id="loaderFill"></span></div>
+    <div class="loader-meta"><span>Cinematic Social Content</span><span id="loaderPct">00</span></div>
   </div>
 </div>
 
-<!-- CURSOR -->
-<div class="cursor" aria-hidden="true">
-  <div class="cursor-dot"></div>
-  <div class="cursor-ring"></div>
-</div>
-
-<!-- GRAIN -->
-<div class="grain" aria-hidden="true"></div>
-<div class="scanlines" aria-hidden="true"></div>
-<div class="vignette" aria-hidden="true"></div>
-
-<!-- NAV -->
-<header class="nav" id="nav">
-  <a class="nav-logo" href="#top" aria-label="Unicrew Socials home">
-    <svg viewBox="0 0 60 24" width="60" height="24" aria-hidden="true">
-      <text x="0" y="18" font-family="Fraunces, serif" font-size="20" font-weight="600" fill="currentColor">us</text>
-      <rect x="38" y="2" width="6" height="6" fill="#ff2a2a"/>
-    </svg>
-    <span class="nav-wordmark">Unicrew <em>Socials</em></span>
-  </a>
-  <nav class="nav-links" aria-label="Primary">
-    <a href="#who">Who</a>
-    <a href="#how">How</a>
-    <a href="#standard">Standard</a>
-    <a href="#packages">Packages</a>
-    <a href="#process">Process</a>
-    <a href="#work">Work</a>
-    <a href="#contact">Contact</a>
-  </nav>
-  <a href="#contact" class="nav-cta">
-    <span>Start a Brief</span>
-    <i></i>
-  </a>
-</header>
-
-<main id="top">
-
-<!-- HERO -->
-<section class="hero" data-scene="hero">
-  <div class="hero-bg">
-    <div class="hero-orb hero-orb-a"></div>
-    <div class="hero-orb hero-orb-b"></div>
-    <div class="hero-grid"></div>
+<nav id="nav">
+  <a class="logo" href="#top"><span class="lw">UNICREW</span><span class="ls"><i></i>SOCIALS<i></i></span></a>
+  <div class="navlinks">
+    <a href="#work">Work</a><a href="#belief">Approach</a><a href="#lab">AI Lab</a><a href="#services">Services</a><a href="#contact">Contact</a>
+    <span class="tc" id="tc">00:00:00:00</span>
   </div>
+</nav>
 
-  <div class="hero-marks">
-    <span class="mark mark-tl">UNICREW FZE · CREATIVE PRODUCTION HOUSE</span>
-    <span class="mark mark-tr">DUBAI · UAE</span>
-    <span class="mark mark-bl">REC ● 01:00:00:00</span>
-    <span class="mark mark-br">01 / 12</span>
-  </div>
-
-  <div class="hero-content">
-    <div class="hero-eyebrow reveal">
-      <span class="dot"></span>
-      <span>Company Profile · 2026</span>
-    </div>
-
-    <h1 class="hero-title">
-      <span class="line"><span class="line-inner">Premium social media,</span></span>
-      <span class="line"><span class="line-inner">built the way</span></span>
-      <span class="line"><span class="line-inner"><em>films</em> are built.</span></span>
+<section class="hero" id="top">
+  <div class="hero-bg" data-parallax data-speed="0.18"><img id="heroImg" alt="Cinematic film set" src="https://dnznrvs05pmza.cloudfront.net/gemini/gemini-3-pro-image-preview/images/465bba5f-0464-499d-b236-43f8396528ad/Cinematic_establishing_shot_of_a_high_end_film_production_se.png?_jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlIYXNoIjoiNDYyODYyMDdlNzAyY2FhZSIsImJ1Y2tldCI6InJ1bndheS10YXNrLWFydGlmYWN0cyIsInN0YWdlIjoicHJvZCIsImV4cCI6MTc4MDI5NjQ1NX0.v-B7MRoS43aPDzl7SUgMuADrONp83nkTSpVOAwcR8ws"></div>
+  <div class="watermark" data-parallax data-speed="0.32">US</div>
+  <span class="corner r">UNICREW FZE · EST. SHARJAH<br>CINEMATIC SOCIAL CONTENT</span>
+  <div class="hero-in" data-hero-fade>
+    <span class="ey">Cinematic Social Content · UAE &amp; KSA</span>
+    <h1>
+      <span class="line l1"><span>Without marketing,</span></span>
+      <span class="line l2"><span>the best product</span></span>
+      <span class="line l3"><span>is still <span class="red">invisible.</span></span></span>
     </h1>
-
-    <p class="hero-sub reveal">
-      Unicrew <em>Socials</em> — a Dubai production house running film-grade monthly social for brands across the UAE.
-    </p>
-
-    <div class="hero-cta reveal">
-      <a href="#packages" class="btn btn-primary">
-        <span>See the Packages</span>
-        <svg viewBox="0 0 24 24" width="14" height="14"><path d="M5 12h14M13 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
-      </a>
-      <a href="#standard" class="btn btn-ghost">
-        <span>Watch the Standard</span>
-      </a>
-    </div>
+    <p class="device">We're the social-content studio that makes brands <span class="r">impossible</span> to scroll past.</p>
   </div>
-
-  <div class="hero-marquee" aria-hidden="true">
-    <div class="marquee-track">
-      <span>Cinematic Lighting</span><i>✦</i>
-      <span>Macro Craft</span><i>✦</i>
-      <span>Editorial Design</span><i>✦</i>
-      <span>Bilingual Storytelling</span><i>✦</i>
-      <span>Fully Managed</span><i>✦</i>
-      <span>Film-Grade Production</span><i>✦</i>
-      <span>Cinematic Lighting</span><i>✦</i>
-      <span>Macro Craft</span><i>✦</i>
-      <span>Editorial Design</span><i>✦</i>
-      <span>Bilingual Storytelling</span><i>✦</i>
-      <span>Fully Managed</span><i>✦</i>
-      <span>Film-Grade Production</span><i>✦</i>
-    </div>
-  </div>
-
-  <a href="#who" class="hero-scroll" aria-label="Scroll to next section">
-    <span>Scroll</span>
-    <span class="scroll-line"><i></i></span>
-  </a>
+  <div class="scrollcue"><span class="bar"></span>Scroll</div>
 </section>
 
-<!-- WHO -->
-<section class="section who" id="who" data-scene="who">
-  <div class="section-head">
-    <span class="section-num">02 / 12</span>
-    <span class="section-tag">Who We Are</span>
-  </div>
-  <div class="who-grid">
-    <div class="who-title">
-      <h2 class="display reveal-stagger">
-        <span>A production house</span>
-        <span>that does <em>social</em>.</span>
-      </h2>
-    </div>
-    <div class="who-body">
-      <p class="lead reveal">Unicrew is a Dubai-based creative production house. We build content the way films are built — with story, craft, and intent — for brands across the UAE.</p>
-      <p class="reveal">Unicrew <em>Socials</em> brings that same film-grade craft to managed monthly social media. Not a content mill. A production studio that happens to run your feed.</p>
-    </div>
-  </div>
+<section class="manifesto" id="about">
+  <span class="ey r">Who We Are</span>
+  <p class="r d1">UNICREW SOCIALS is a cinematic social-content studio. We don't just fill feeds. We turn products into <span class="red">desire</span>, brands into <span class="red">stories</span>, and attention into <span class="red">demand</span> <span class="mut">— for the most ambitious names across the Gulf.</span></p>
+</section>
 
-  <div class="who-pillars">
-    <article class="pillar reveal">
-      <span class="pillar-num">01</span>
-      <h3>Film-grade</h3>
-      <p>Production quality on every asset.</p>
-    </article>
-    <article class="pillar reveal">
-      <span class="pillar-num">02</span>
-      <h3>UAE-wide</h3>
-      <p>Coverage, Dubai-based studio.</p>
-    </article>
-    <article class="pillar reveal">
-      <span class="pillar-num">03</span>
-      <h3>Bilingual</h3>
-      <p>Arabic and English, natively.</p>
-    </article>
+<div class="marquee"><div class="track">
+  <span>Without marketing, it&#39;s just noise.</span><i>&mdash;</i><span class="rd">UNICREW SOCIALS</span><i>&mdash;</i><span>Without marketing, it&#39;s just noise.</span><i>&mdash;</i><span class="rd">UNICREW SOCIALS</span><i>&mdash;</i><span>Without marketing, it&#39;s just noise.</span><i>&mdash;</i><span class="rd">UNICREW SOCIALS</span><i>&mdash;</i><span>Without marketing, it&#39;s just noise.</span><i>&mdash;</i><span class="rd">UNICREW SOCIALS</span><i>&mdash;</i><span>Without marketing, it&#39;s just noise.</span><i>&mdash;</i><span class="rd">UNICREW SOCIALS</span><i>&mdash;</i><span>Without marketing, it&#39;s just noise.</span><i>&mdash;</i><span class="rd">UNICREW SOCIALS</span><i>&mdash;</i>
+</div></div>
+
+<!-- SHOWREEL -->
+<section class="reel" id="reel">
+  <div class="reel-stage" id="reelStage">
+    <img alt="UNICREW SOCIALS showreel" data-fallback="1" data-parallax data-speed="0.12" src="https://dnznrvs05pmza.cloudfront.net/gemini/gemini-3-pro-image-preview/images/9a0a7f51-2ccc-40a5-93cd-cceab396d9cf/Cinematic_wide_shot_of_a_film_crew_working_on_a_sound_stage_.png?_jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlIYXNoIjoiNmM5NGFkZmE0YWM4YmZkOCIsImJ1Y2tldCI6InJ1bndheS10YXNrLWFydGlmYWN0cyIsInN0YWdlIjoicHJvZCIsImV4cCI6MTc4MDI5NzU5NH0.a3Pt2KhGIhKneptCm9y-d2lUNx7HsMCU0XEfsKEmEew">
+    <span class="reel-tc">REC ● 00:00:01:18</span><span class="reel-tc r2">UNICREW · 2026</span>
+    <div class="reel-in">
+      <div class="play"><span class="tri"></span></div>
+      <div class="rl-ey">The Studio · Showreel 2026</div>
+      <h3>Film-grade craft,<br>built for the <span class="red">feed.</span></h3>
+      <p>Director &amp; DOP-led · Shot across UAE &amp; KSA</p>
+    </div>
   </div>
 </section>
 
-<!-- WHY -->
-<section class="section why" id="why" data-scene="why">
-  <div class="section-head">
-    <span class="section-num">03 / 12</span>
-    <span class="section-tag">Why Brands Come To Us</span>
-  </div>
-
-  <h2 class="display reveal-stagger center">
-    <span>Most social content</span>
-    <span>is <em>forgettable</em>.</span>
-  </h2>
-  <p class="lead center reveal">Brands in the UAE are stuck choosing between two bad options. We are the third.</p>
-
-  <div class="compare">
-    <article class="compare-card reveal" data-tilt>
-      <div class="compare-head"><span>A</span><h3>Volume agencies</h3></div>
-      <p>High output, low craft. Twenty templated posts a month that look like everyone else's feed.</p>
-      <div class="compare-bar"><i style="--w:85%"></i><span>Output</span></div>
-      <div class="compare-bar"><i style="--w:25%"></i><span>Craft</span></div>
-    </article>
-    <article class="compare-card reveal" data-tilt>
-      <div class="compare-head"><span>B</span><h3>Freelancers</h3></div>
-      <p>Talented but inconsistent. Quality swings week to week, and strategy is nobody's job.</p>
-      <div class="compare-bar"><i style="--w:55%"></i><span>Output</span></div>
-      <div class="compare-bar"><i style="--w:60%"></i><span>Craft</span></div>
-    </article>
-    <article class="compare-card featured reveal" data-tilt>
-      <div class="compare-head"><span>★</span><h3>Unicrew Socials</h3></div>
-      <p>Agency reliability with production-house craft. Fewer assets, each one good enough to stop a scroll.</p>
-      <div class="compare-bar"><i style="--w:75%"></i><span>Output</span></div>
-      <div class="compare-bar"><i style="--w:98%"></i><span>Craft</span></div>
-    </article>
+<section class="belief" id="belief">
+  <div class="wrap">
+    <span class="ey r">What We Believe</span>
+    <h2 class="big r d1">Marketing is the<br>difference between a product<br>and a <span class="red">phenomenon.</span></h2>
+    <p class="sub r d2">A burger becomes a craving. A bottle becomes a status symbol. A name becomes a movement. <b>We manufacture that leap</b> — frame by frame, post by post.</p>
   </div>
 </section>
 
-<!-- HOW -->
-<section class="section how" id="how" data-scene="how">
-  <div class="section-head">
-    <span class="section-num">04 / 12</span>
-    <span class="section-tag">How We Work</span>
+<section class="work-sec" id="work">
+  <div class="work-head">
+    <div><span class="ey r">Selected Work</span><h2 class="big r d1">The "Without<br>Marketing" series.</h2></div>
+    <p class="lead r d2">A scroll-stopping campaign built to prove a single point — that marketing is what turns objects into obsession. One idea, every industry.</p>
   </div>
-  <h2 class="display reveal-stagger">
-    <span>End-to-end.</span>
-    <span><em>Fully managed.</em></span>
-  </h2>
-  <p class="lead reveal">Three pillars run through every engagement. You stay in approval. We handle the rest.</p>
-
-  <div class="how-tracks">
-    <article class="track reveal">
-      <header><span class="track-num">01</span><span class="track-label">Strategy</span></header>
-      <h3>Monthly direction, audience-aligned.</h3>
-      <ul>
-        <li>Content calendar built monthly</li>
-        <li>Audience-aligned themes</li>
-        <li>Platform-specific creative direction</li>
-      </ul>
-    </article>
-    <article class="track reveal">
-      <header><span class="track-num">02</span><span class="track-label">Production</span></header>
-      <h3>Film-grade craft, every frame.</h3>
-      <ul>
-        <li>Scripting, shooting, editing</li>
-        <li>Motion graphics &amp; captions</li>
-        <li>Arabic and English natively</li>
-      </ul>
-    </article>
-    <article class="track reveal">
-      <header><span class="track-num">03</span><span class="track-label">Performance</span></header>
-      <h3>Publish, measure, refine.</h3>
-      <ul>
-        <li>Publishing &amp; scheduling</li>
-        <li>Hashtag &amp; SEO research</li>
-        <li>Clear monthly reporting</li>
-      </ul>
-    </article>
+  <div class="gallery">
+    <figure class="work r">
+      <div class="work-img" data-cat="Food &amp; Beverage"><img alt="Food &amp; Beverage" loading="lazy" decoding="async" data-fallback="1" src="https://dnznrvs05pmza.cloudfront.net/gemini/gemini-3-pro-image-preview/images/3c8894aa-b708-4d64-b51c-8d3e3a4eb3f0/A_single_gourmet_burger_presented_like_a_Renaissance_still_l.png?_jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlIYXNoIjoiMDY5OGQyNTc4ZWVkMmY4MiIsImJ1Y2tldCI6InJ1bndheS10YXNrLWFydGlmYWN0cyIsInN0YWdlIjoicHJvZCIsImV4cCI6MTc4MDI3MjIxNX0.VLegb8DJhWNE5TYxRRlZ7I-vpOTe8fiTEcJQW1UwXAA"></div>
+      <figcaption><span class="cat">Food &amp; Beverage</span><span class="cl">Fuel became an experience.</span></figcaption>
+    </figure>
+    <figure class="work r">
+      <div class="work-img" data-cat="Apparel &amp; Retail"><img alt="Apparel &amp; Retail" loading="lazy" decoding="async" data-fallback="1" src="https://dnznrvs05pmza.cloudfront.net/gemini/gemini-3-pro-image-preview/images/df1762a2-b30a-4f74-98f5-dd6ffadfb010/A_single_luxury_tailored_garment__a_folded_cashmere_coat_dra.png?_jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlIYXNoIjoiMmYxMjM0NDBhNjFhZTYwMyIsImJ1Y2tldCI6InJ1bndheS10YXNrLWFydGlmYWN0cyIsInN0YWdlIjoicHJvZCIsImV4cCI6MTc4MDI5ODE3Nn0.gJvXCRSSOVzkBDbSlgF2J9vtJ1cN6vCZZ9gSYcn1LX8"></div>
+      <figcaption><span class="cat">Apparel &amp; Retail</span><span class="cl">A product became a statement.</span></figcaption>
+    </figure>
+    <figure class="work r">
+      <div class="work-img" data-cat="Art &amp; Culture"><img alt="Art &amp; Culture" loading="lazy" decoding="async" data-fallback="1" src="https://dnznrvs05pmza.cloudfront.net/gemini/gemini-3-pro-image-preview/images/79ed2b06-19d2-472d-b830-197918aa1caf/A_classical_white_marble_bust_of_a_youthful_figure_on_a_ston.png?_jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlIYXNoIjoiNDRhYWE4YTk3ZTZhYmNkZiIsImJ1Y2tldCI6InJ1bndheS10YXNrLWFydGlmYWN0cyIsInN0YWdlIjoicHJvZCIsImV4cCI6MTc4MDI0OTM4NX0.pMwe82wakIIjJEv027Mpz5cR7c9H5RjpeCkM7Sy4vd8"></div>
+      <figcaption><span class="cat">Art &amp; Culture</span><span class="cl">Reach is what makes it matter.</span></figcaption>
+    </figure>
+    <figure class="work r">
+      <div class="work-img" data-cat="Beauty &amp; Cosmetics"><img alt="Beauty &amp; Cosmetics" loading="lazy" decoding="async" data-fallback="1" src="https://dnznrvs05pmza.cloudfront.net/gemini/gemini-3-pro-image-preview/images/ade32fda-dcce-4cda-a15e-e898908d1f6b/A_single_luxury_perfume_bottle_of_amber_glass_on_a_polished_.png?_jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlIYXNoIjoiODYzZTJlMTZkMmZkMjNhMyIsImJ1Y2tldCI6InJ1bndheS10YXNrLWFydGlmYWN0cyIsInN0YWdlIjoicHJvZCIsImV4cCI6MTc4MDMwNTE3NH0.rM7OvFySVrRjsFUHH5eIruoXkMVrPDlsvQLctA6y9QU"></div>
+      <figcaption><span class="cat">Beauty &amp; Cosmetics</span><span class="cl">Function became desire.</span></figcaption>
+    </figure>
+    <figure class="work r">
+      <div class="work-img" data-cat="Travel &amp; Tourism"><img alt="Travel &amp; Tourism" loading="lazy" decoding="async" data-fallback="1" src="https://dnznrvs05pmza.cloudfront.net/gemini/gemini-3-pro-image-preview/images/ff074ff2-3928-4f8a-a9e1-e001a107a79e/A_sweeping_desert_dune_landscape_at_golden_hour_with_a_dista.png?_jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlIYXNoIjoiZjlhOTdhNzIxNWI3NGYzMSIsImJ1Y2tldCI6InJ1bndheS10YXNrLWFydGlmYWN0cyIsInN0YWdlIjoicHJvZCIsImV4cCI6MTc4MDIzMzcxNH0.-VcNHD1lQmg6alOVVLnP_KC0HY_w9V2i21h1TvKRPos"></div>
+      <figcaption><span class="cat">Travel &amp; Tourism</span><span class="cl">A map became a bucket list.</span></figcaption>
+    </figure>
+    <figure class="work r">
+      <div class="work-img" data-cat="Fashion &amp; Icon"><img alt="Fashion &amp; Icon" loading="lazy" decoding="async" data-fallback="1" src="https://dnznrvs05pmza.cloudfront.net/gemini/gemini-3-pro-image-preview/images/076bf536-e655-4933-88d9-64d7c5ca05b4/An_elegant_figure_in_a_tailored_suit_walking_along_a_curved_.png?_jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlIYXNoIjoiNTRkNzQyZGEzYTAwZGM3NiIsImJ1Y2tldCI6InJ1bndheS10YXNrLWFydGlmYWN0cyIsInN0YWdlIjoicHJvZCIsImV4cCI6MTc4MDMxMTg5OH0.uWrL2KgTFjCxi4BVZdgeRede0EQKItHn96snubDdUwU"></div>
+      <figcaption><span class="cat">Fashion &amp; Icon</span><span class="cl">A name became a movement.</span></figcaption>
+    </figure>
+    <figure class="work r">
+      <div class="work-img" data-cat="Real Estate"><img alt="Real Estate" loading="lazy" decoding="async" data-fallback="1" src="https://dnznrvs05pmza.cloudfront.net/gemini/gemini-3-pro-image-preview/images/7a6644e8-cd7a-465f-8aad-d0cb867919c7/A_minimalist_luxury_architectural_interior__a_single_designe.png?_jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlIYXNoIjoiYzVlNWE0ZDkwNDllZmM1MCIsImJ1Y2tldCI6InJ1bndheS10YXNrLWFydGlmYWN0cyIsInN0YWdlIjoicHJvZCIsImV4cCI6MTc4MDI1NDI5N30.CLNqb4lMZdoxsL-Qjk13tIka9GnIu1jCTyWxAzXYKGk"></div>
+      <figcaption><span class="cat">Real Estate</span><span class="cl">Concrete became sold out.</span></figcaption>
+    </figure>
   </div>
 </section>
 
-<!-- STANDARD -->
-<section class="section standard" id="standard" data-scene="standard">
-  <div class="section-head light">
-    <span class="section-num">05 / 12</span>
-    <span class="section-tag">The Standard</span>
-  </div>
+<!-- FILM STRIP -->
+<div class="strip" id="strip"><div class="track" id="stripTrack"></div></div>
 
-  <div class="standard-grid">
-    <div class="standard-text">
-      <h2 class="display reveal-stagger">
-        <span>This is what</span>
-        <span>we <em>deliver</em>.</span>
-      </h2>
-      <p class="lead reveal">Cinematic lighting. Macro craft. Restrained editorial design. The kind of work a 5,000 AED agency simply cannot produce — delivered every month, on a retainer.</p>
-      <ul class="standard-list">
-        <li class="reveal"><span>01</span>Cinematic lighting on every frame</li>
-        <li class="reveal"><span>02</span>Macro detail — texture, finish, the filmmaker's eye</li>
-        <li class="reveal"><span>03</span>Editorial design, never templated</li>
-        <li class="reveal"><span>04</span>Native Arabic and English storytelling</li>
-      </ul>
+<section class="services" id="services">
+  <div class="svc-head"><span class="ey r">What We Do</span><h2 class="big r d1">End to end. <span class="red">In-house.</span></h2></div>
+  <div class="svc-grid">
+    <div class="svc r"><div class="n">01</div><h3>Short-Form &amp; Reels</h3><p>Vertical-native films engineered to stop the thumb and survive the algorithm.</p></div>
+    <div class="svc r d1"><div class="n">02</div><h3>Content Series</h3><p>Ownable, repeatable formats that build a brand week after week, not post by post.</p></div>
+    <div class="svc r d2"><div class="n">03</div><h3>Creative Direction</h3><p>The idea first. Concepts, scripts and art direction that give content a reason to exist.</p></div>
+    <div class="svc r"><div class="n">04</div><h3>Cinematic Production</h3><p>Director and DOP-led shoots that bring film-grade craft to the social feed.</p></div>
+    <div class="svc r d1"><div class="n">05</div><h3>AI-Driven Content</h3><p>Generative pipelines that expand what a single concept — or budget — can produce.</p></div>
+    <div class="svc r d2"><div class="n">06</div><h3>Always-On Social</h3><p>Strategy, calendars and community — the engine that keeps the brand in the conversation.</p></div>
+  </div>
+</section>
+
+<!-- AI PRODUCTION LAB -->
+<section class="lab" id="lab">
+  <span class="ey r">The Differentiator</span>
+  <h2 class="big r d1">An AI production lab,<br>inside a <span style="color:#E0524C">film studio.</span></h2>
+  <p class="sub r d2">We pair director-led craft with a generative pipeline — so a single idea can be shot, scaled and re-cut into a hundred variations <b>without losing the cinematic standard</b>. More frames, more formats, more markets, from one budget.</p>
+  <div class="tools r d3">
+    <span class="tool"><b>↳</b>Runway Gen-4</span>
+    <span class="tool"><b>↳</b>Seedance 2.0</span>
+    <span class="tool"><b>↳</b>Midjourney V7</span>
+    <span class="tool"><b>↳</b>Kling Pro</span>
+    <span class="tool"><b>↳</b>Sora</span>
+    <span class="tool"><b>↳</b>Generative VO &amp; Score</span>
+  </div>
+  <div class="lab-grid">
+    <div class="lab-cell r"><div class="lc-n">A1</div><h4>Concept → Frame</h4><p>Treatments, look-dev and storyboards rendered before a camera rolls — clients see the film before we shoot it.</p></div>
+    <div class="lab-cell r d1"><div class="lc-n">A2</div><h4>Hybrid Capture</h4><p>Live cinematography fused with generative shots, set extensions and impossible angles — seamlessly graded into one world.</p></div>
+    <div class="lab-cell r d2"><div class="lc-n">A3</div><h4>Infinite Re-Cuts</h4><p>One shoot becomes a content engine — localised, resized and re-versioned for every platform and market across the Gulf.</p></div>
+  </div>
+</section>
+
+<section class="stats" id="stats">
+  <span class="ey r">The Attention Economy</span>
+  <h2 class="big r d1">Seconds decide everything.</h2>
+  <div class="stat-grid">
+    <div class="stat r"><div class="num"><b data-target="1.7" data-dec="1">0</b>s</div><div class="lab2">To capture<br>a viewer</div></div>
+    <div class="stat r d1"><div class="num"><b data-target="92">0</b>%</div><div class="lab2">Retain video<br>over text</div></div>
+    <div class="stat r d2"><div class="num"><b data-target="3">0</b>&times;</div><div class="lab2">Recall from<br>cinematic story</div></div>
+    <div class="stat r d3"><div class="num"><b data-target="78">0</b>%</div><div class="lab2">Of GCC reach is<br>vertical-first</div></div>
+  </div>
+</section>
+
+<section class="process">
+  <span class="ey r">How We Work</span><h2 class="big r d1">A disciplined craft.</h2>
+  <div class="steps">
+    <div class="step r"><div class="n">01 / Insight</div><h4>The Idea</h4><p>We interrogate the brand, the market and the feed until one ownable idea emerges.</p></div>
+    <div class="step r"><div class="n">02 / Direct</div><h4>Concept &amp; Script</h4><p>Treatment, look and narrative locked before a single frame is shot.</p></div>
+    <div class="step r"><div class="n">03 / Produce</div><h4>Shoot</h4><p>Cinematic capture led by our own director and DOP across UAE and KSA.</p></div>
+    <div class="step r"><div class="n">04 / Finish</div><h4>Edit &amp; Grade</h4><p>Edit, sound, motion and color — finished to a brand-native, theatrical standard.</p></div>
+    <div class="step r"><div class="n">05 / Scale</div><h4>Publish &amp; Grow</h4><p>Platform-ready cuts, calendar and optimisation that compound reach over time.</p></div>
+  </div>
+</section>
+
+<!-- BEHIND THE LENS -->
+<section class="lens" id="lens">
+  <span class="ey dim r">Behind the Lens</span>
+  <div class="lens-grid">
+    <div class="lens-media">
+      <img alt="Director and DOP led studio" loading="lazy" decoding="async" data-fallback="1" data-parallax data-speed="0.1" src="https://dnznrvs05pmza.cloudfront.net/gemini/gemini-3-pro-image-preview/images/9a0a7f51-2ccc-40a5-93cd-cceab396d9cf/Cinematic_wide_shot_of_a_film_crew_working_on_a_sound_stage_.png?_jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlIYXNoIjoiNmM5NGFkZmE0YWM4YmZkOCIsImJ1Y2tldCI6InJ1bndheS10YXNrLWFydGlmYWN0cyIsInN0YWdlIjoicHJvZCIsImV4cCI6MTc4MDI5NzU5NH0.a3Pt2KhGIhKneptCm9y-d2lUNx7HsMCU0XEfsKEmEew">
+      <span class="tag">On set · UAE</span>
     </div>
-
-    <div class="standard-reel">
-      <div class="reel-frame">
-        <div class="reel-meta"><span>REEL · 01</span><span class="rec">● REC</span></div>
-        <div class="reel-stage">
-          <div class="reel-slide" data-slide="0">
-            <div class="reel-art reel-art-1">
-              <img class="reel-img" src="assets/reel/reel-01.jpg" alt="" loading="lazy" onload="this.classList.add('ok')" onerror="this.remove()" />
-              <span class="reel-tag">CINEMATIC · LIGHTING</span>
-              <div class="reel-glow"></div>
-            </div>
-          </div>
-          <div class="reel-slide" data-slide="1">
-            <div class="reel-art reel-art-2">
-              <img class="reel-img" src="assets/reel/reel-02.jpg" alt="" loading="lazy" onload="this.classList.add('ok')" onerror="this.remove()" />
-              <span class="reel-tag">MACRO · DETAIL</span>
-              <div class="reel-glow"></div>
-            </div>
-          </div>
-          <div class="reel-slide" data-slide="2">
-            <div class="reel-art reel-art-3">
-              <img class="reel-img" src="assets/reel/reel-03.jpg" alt="" loading="lazy" onload="this.classList.add('ok')" onerror="this.remove()" />
-              <span class="reel-tag">EDITORIAL · DESIGN</span>
-              <div class="reel-glow"></div>
-            </div>
-          </div>
-          <div class="reel-slide" data-slide="3">
-            <div class="reel-art reel-art-4">
-              <img class="reel-img" src="assets/reel/reel-04.jpg" alt="" loading="lazy" onload="this.classList.add('ok')" onerror="this.remove()" />
-              <span class="reel-tag">BILINGUAL · STORY</span>
-              <div class="reel-glow"></div>
-            </div>
-          </div>
-        </div>
-        <div class="reel-controls">
-          <button class="reel-dot active" data-go="0" aria-label="Slide 1"></button>
-          <button class="reel-dot" data-go="1" aria-label="Slide 2"></button>
-          <button class="reel-dot" data-go="2" aria-label="Slide 3"></button>
-          <button class="reel-dot" data-go="3" aria-label="Slide 4"></button>
-        </div>
-        <div class="reel-progress"><i></i></div>
+    <div class="lens-copy">
+      <h2 class="big r d1">Led by a<br>director, not a<br><span class="red">dashboard.</span></h2>
+      <p class="r d2">UNICREW SOCIALS is a lean, senior team built around a single principle: <b>every post is a film.</b> Our Director of Photography leads each project from concept to colour — so the work carries the discipline of cinema, not the noise of a content mill.</p>
+      <p class="r d3">A small crew by design. Fewer hands, higher craft, one taste level from the first frame to the final cut.</p>
+      <div class="sig r d4">
+        <span class="nm">Bilal &mdash; Director of Photography</span>
+        <span class="ti">Founder · UNICREW FZE</span>
       </div>
     </div>
   </div>
 </section>
 
-<!-- PACKAGES -->
-<section class="section packages" id="packages" data-scene="packages">
-  <div class="section-head">
-    <span class="section-num">06 / 12</span>
-    <span class="section-tag">The Packages</span>
+<!-- QUOTE -->
+<section class="quote">
+  <div class="mark r">&ldquo;</div>
+  <blockquote class="r d1">They didn't make us content.<br>They made us <span class="red">impossible to ignore.</span></blockquote>
+  <div class="attr r d2">— <span class="slot">[ Client name &amp; title — drop in a real testimonial ]</span></div>
+</section>
+
+<!-- CLIENTS -->
+<section class="clients" id="clients">
+  <span class="ey r">Trusted Across the Gulf</span>
+  <h2 class="big r d1">Brands that refused<br>to be invisible.</h2>
+  <div class="client-grid">
+    <div class="client r"><span class="ch">Your Logo</span><span class="cs">Perfume &amp; Beauty</span></div>
+    <div class="client r d1"><span class="ch">Your Logo</span><span class="cs">Banking &amp; Finance</span></div>
+    <div class="client r d2"><span class="ch">Your Logo</span><span class="cs">Culture &amp; Events</span></div>
+    <div class="client r d3"><span class="ch">Your Logo</span><span class="cs">Real Estate</span></div>
+    <div class="client r"><span class="ch">Your Logo</span><span class="cs">F &amp; B</span></div>
+    <div class="client r d1"><span class="ch">Your Logo</span><span class="cs">Retail</span></div>
+    <div class="client r d2"><span class="ch">Your Logo</span><span class="cs">Tourism</span></div>
+    <div class="client add r d3"><span class="ch">+ Add</span><span class="cs">Next client</span></div>
   </div>
-  <h2 class="display reveal-stagger">
-    <span>Three tiers.</span>
-    <span>Built to <em>grow</em> with you.</span>
-  </h2>
-  <p class="lead reveal">Fully managed monthly retainers. Minimum engagement three months. All figures exclude 5% VAT.</p>
+  <p class="note r">Replace these slots with client wordmarks. Keep them single-colour (ink or burgundy) for a uniform, editorial logo wall.</p>
+</section>
 
-  <div class="tiers">
-    <article class="tier reveal" data-tier="essential">
-      <div class="tier-top">
-        <span class="tier-name">Essential</span>
-        <span class="tier-blurb">A consistent, premium presence on one primary platform.</span>
-      </div>
-      <div class="tier-price">
-        <span class="price-num" data-target="12000">12,000</span>
-        <span class="price-unit">AED <em>/ month</em></span>
-      </div>
-      <ul class="tier-list">
-        <li>3 static posts / week</li>
-        <li>2 reels / week</li>
-        <li>~20 assets monthly</li>
-        <li>2 production days / month</li>
-        <li>Monthly strategy &amp; reporting</li>
-      </ul>
-      <a class="tier-cta" href="#contact">Begin Essential <i>→</i></a>
-    </article>
-
-    <article class="tier featured reveal" data-tier="growth">
-      <span class="tier-badge">Most Popular</span>
-      <div class="tier-top">
-        <span class="tier-name">Growth</span>
-        <span class="tier-blurb">Scale your voice across platforms and build community traction.</span>
-      </div>
-      <div class="tier-price">
-        <span class="price-num" data-target="18000">18,000</span>
-        <span class="price-unit">AED <em>/ month</em></span>
-      </div>
-      <ul class="tier-list">
-        <li>5 static posts / week</li>
-        <li>4 reels / week</li>
-        <li>~36 assets monthly</li>
-        <li>Multi-platform publishing</li>
-        <li>Bi-weekly reporting &amp; calls</li>
-      </ul>
-      <a class="tier-cta" href="#contact">Begin Growth <i>→</i></a>
-    </article>
-
-    <article class="tier reveal" data-tier="dominance">
-      <div class="tier-top">
-        <span class="tier-name">Dominance</span>
-        <span class="tier-blurb">Category-defining share of voice. Daily presence everywhere.</span>
-      </div>
-      <div class="tier-price">
-        <span class="price-num" data-target="32500">32,500</span>
-        <span class="price-unit">AED <em>/ month</em></span>
-      </div>
-      <ul class="tier-list">
-        <li>Daily static post</li>
-        <li>Daily reel</li>
-        <li>~60 assets monthly</li>
-        <li>4 production days / month</li>
-        <li>Weekly strategy &amp; dashboard</li>
-      </ul>
-      <a class="tier-cta" href="#contact">Begin Dominance <i>→</i></a>
-    </article>
-  </div>
-
-  <!-- AT A GLANCE -->
-  <div class="glance" id="glance">
-    <div class="section-head">
-      <span class="section-num">07 / 12</span>
-      <span class="section-tag">At a Glance</span>
-    </div>
-    <h3 class="display small reveal-stagger">
-      <span>Compare</span>
-      <span>the <em>tiers</em>.</span>
-    </h3>
-
-    <div class="glance-wrap reveal">
-      <table class="glance-table">
-        <thead>
-          <tr>
-            <th>&nbsp;</th>
-            <th><span>Essential</span><em>12,000 AED</em></th>
-            <th class="hi"><span>Growth</span><em>18,000 AED</em></th>
-            <th><span>Dominance</span><em>32,500 AED</em></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td>Static posts / week</td><td>3</td><td class="hi">5</td><td>Daily</td></tr>
-          <tr><td>Reels / week</td><td>2</td><td class="hi">4</td><td>Daily</td></tr>
-          <tr><td>Monthly assets</td><td>~20</td><td class="hi">~36</td><td>~60</td></tr>
-          <tr><td>Production days / month</td><td>2</td><td class="hi">3</td><td>4</td></tr>
-          <tr><td>Platforms</td><td>1</td><td class="hi">Multi</td><td>All</td></tr>
-          <tr><td>Reporting cadence</td><td>Monthly</td><td class="hi">Bi-weekly</td><td>Weekly</td></tr>
-          <tr><td>Strategy calls</td><td>1 / month</td><td class="hi">2 / month</td><td>Weekly</td></tr>
-          <tr><td>Dedicated dashboard</td><td>—</td><td class="hi">●</td><td>●</td></tr>
-        </tbody>
-      </table>
-      <p class="fine">All figures exclusive of 5% VAT · Minimum engagement three (3) months.</p>
-    </div>
+<section class="region">
+  <span class="ey dim r">Where We Work</span><h2 class="big r d1">Two markets.<br>One standard of craft.</h2>
+  <div class="region-grid">
+    <div class="market r d1"><div class="flag">United Arab Emirates</div><h3>The Base</h3><p>Our operational home — a Sharjah Publishing City free-zone studio servicing brands, agencies and founders across the Emirates.</p></div>
+    <div class="market r d2"><div class="flag">Saudi Arabia</div><h3>The Frontier</h3><p>Where we tell stories built for scale — cultural, commercial and entertainment content for the region's most ambitious clients.</p></div>
   </div>
 </section>
 
-<!-- PROCESS -->
-<section class="section process" id="process" data-scene="process">
-  <div class="section-head light">
-    <span class="section-num">08 / 12</span>
-    <span class="section-tag">The Process</span>
-  </div>
-  <h2 class="display reveal-stagger">
-    <span>One rhythm,</span>
-    <span>every <em>month</em>.</span>
-  </h2>
-  <p class="lead reveal">A predictable cycle that turns chaotic content into a calm, premium presence.</p>
-
-  <ol class="rail">
-    <li class="rail-step reveal">
-      <span class="rail-num">01</span>
-      <h3>Plan</h3>
-      <p>Calendar built and approved by the 25th.</p>
-    </li>
-    <li class="rail-step reveal">
-      <span class="rail-num">02</span>
-      <h3>Pre-produce</h3>
-      <p>Scripting, shot planning, scheduling.</p>
-    </li>
-    <li class="rail-step reveal">
-      <span class="rail-num">03</span>
-      <h3>Shoot</h3>
-      <p>Concentrated on-site production days.</p>
-    </li>
-    <li class="rail-step reveal">
-      <span class="rail-num">04</span>
-      <h3>Edit &amp; Publish</h3>
-      <p>Post, bilingual captions, scheduling.</p>
-    </li>
-    <li class="rail-step reveal">
-      <span class="rail-num">05</span>
-      <h3>Report</h3>
-      <p>Performance insight and next steps.</p>
-    </li>
-  </ol>
+<section class="close" id="contact">
+  <span class="ey r">Let's Build</span>
+  <h2 class="r d1">Make them<br><span class="red">look.</span></h2>
+  <a class="mail r d2" href="mailto:hello@unicrew.co">hello@unicrew.co</a>
+  <div class="socials r d3"><a href="#">Instagram</a><a href="#">TikTok</a><a href="#">YouTube</a><a href="#">LinkedIn</a></div>
+  <div class="logo r d3"><span class="lw">UNICREW</span><span class="ls"><i></i>SOCIALS<i></i></span></div>
 </section>
-
-<!-- WHY UNICREW -->
-<section class="section edge" id="edge" data-scene="edge">
-  <div class="section-head">
-    <span class="section-num">09 / 12</span>
-    <span class="section-tag">Why Unicrew</span>
-  </div>
-  <h2 class="display reveal-stagger">
-    <span>What sets</span>
-    <span>us <em>apart</em>.</span>
-  </h2>
-
-  <div class="edge-grid">
-    <article class="edge-card reveal">
-      <h3>Film-grade craft</h3>
-      <p>We are a production house first. Cinematic quality is our baseline, not an upgrade.</p>
-    </article>
-    <article class="edge-card reveal">
-      <h3>Truly bilingual</h3>
-      <p>Native Arabic and English — story and dialect, not translation. Built for the UAE.</p>
-    </article>
-    <article class="edge-card reveal">
-      <h3>Fully managed</h3>
-      <p>Strategy, production, publishing, reporting. You approve; we run everything else.</p>
-    </article>
-    <article class="edge-card reveal">
-      <h3>Senior attention</h3>
-      <p>You are not a small account in a big agency book. The work gets a filmmaker's eye.</p>
-    </article>
-  </div>
-</section>
-
-<!-- WHO IT'S FOR -->
-<section class="section forwhom" id="for" data-scene="for">
-  <div class="section-head">
-    <span class="section-num">10 / 12</span>
-    <span class="section-tag">Who It's For</span>
-  </div>
-  <h2 class="display reveal-stagger">
-    <span>Built for brands where</span>
-    <span>the feed is the <em>storefront</em>.</span>
-  </h2>
-  <p class="lead reveal">If visual quality drives your revenue, a premium social presence is not optional. These are the brands we serve best.</p>
-
-  <div class="industries">
-    <article class="industry reveal">
-      <span class="industry-num">01</span>
-      <h3>Hospitality &amp; F&amp;B</h3>
-      <p>Restaurants, cafes, lounges, and hotels — where the feed is the atmosphere and the menu.</p>
-    </article>
-    <article class="industry reveal">
-      <span class="industry-num">02</span>
-      <h3>Clinics &amp; wellness</h3>
-      <p>Aesthetic, dental, and wellness brands selling trust and a premium experience.</p>
-    </article>
-    <article class="industry reveal">
-      <span class="industry-num">03</span>
-      <h3>Luxury retail &amp; products</h3>
-      <p>Fashion, accessories, and lifestyle brands where craft has to show in every frame.</p>
-    </article>
-    <article class="industry reveal">
-      <span class="industry-num">04</span>
-      <h3>Real estate &amp; property</h3>
-      <p>Developers and brokerages where cinematic property content is a clear edge.</p>
-    </article>
-    <article class="industry reveal">
-      <span class="industry-num">05</span>
-      <h3>Founder &amp; personal brands</h3>
-      <p>Executives and entrepreneurs building authority and visibility across the UAE.</p>
-    </article>
-    <article class="industry reveal">
-      <span class="industry-num">06</span>
-      <h3>Emerging premium brands</h3>
-      <p>Ambitious new brands ready to commit to a consistent, high-craft presence.</p>
-    </article>
-  </div>
-</section>
-
-<!-- SELECTED WORK -->
-<section class="section work" id="work" data-scene="work">
-  <div class="section-head">
-    <span class="section-num">Selected · Frames</span>
-    <span class="section-tag">Recent Work</span>
-  </div>
-  <h2 class="display reveal-stagger">
-    <span>The feed,</span>
-    <span>frame by <em>frame</em>.</span>
-  </h2>
-  <p class="lead reveal">A glance at what runs through Unicrew Socials' feeds — hospitality, retail, real estate, wellness. Each frame approved, on-brand, on-time.</p>
-
-  <div class="work-grid">
-    <a class="work-tile tile-a reveal" href="#contact" data-cat="Hospitality" aria-label="View hospitality work">
-      <img src="assets/work/work-01.jpg" alt="" loading="lazy" onload="this.classList.add('ok')" onerror="this.parentElement.classList.add('no-img');this.remove()" />
-      <div class="work-meta">
-        <span class="work-cat">Hospitality</span>
-        <h3 class="work-brand">Cinematic plating, low-key light.</h3>
-        <span class="work-go">View brief <i>→</i></span>
-      </div>
-    </a>
-    <a class="work-tile tile-b reveal" href="#contact" data-cat="Luxury Retail">
-      <img src="assets/work/work-02.jpg" alt="" loading="lazy" onload="this.classList.add('ok')" onerror="this.parentElement.classList.add('no-img');this.remove()" />
-      <div class="work-meta">
-        <span class="work-cat">Luxury Retail</span>
-        <h3 class="work-brand">Macro craft on every finish.</h3>
-        <span class="work-go">View brief <i>→</i></span>
-      </div>
-    </a>
-    <a class="work-tile tile-c reveal" href="#contact" data-cat="Real Estate">
-      <img src="assets/work/work-03.jpg" alt="" loading="lazy" onload="this.classList.add('ok')" onerror="this.parentElement.classList.add('no-img');this.remove()" />
-      <div class="work-meta">
-        <span class="work-cat">Real Estate</span>
-        <h3 class="work-brand">Cinematic property storytelling.</h3>
-        <span class="work-go">View brief <i>→</i></span>
-      </div>
-    </a>
-    <a class="work-tile tile-d reveal" href="#contact" data-cat="Wellness">
-      <img src="assets/work/work-04.jpg" alt="" loading="lazy" onload="this.classList.add('ok')" onerror="this.parentElement.classList.add('no-img');this.remove()" />
-      <div class="work-meta">
-        <span class="work-cat">Clinics &amp; Wellness</span>
-        <h3 class="work-brand">Trust, finished with restraint.</h3>
-        <span class="work-go">View brief <i>→</i></span>
-      </div>
-    </a>
-    <a class="work-tile tile-e reveal" href="#contact" data-cat="Founder">
-      <img src="assets/work/work-05.jpg" alt="" loading="lazy" onload="this.classList.add('ok')" onerror="this.parentElement.classList.add('no-img');this.remove()" />
-      <div class="work-meta">
-        <span class="work-cat">Founder Brand</span>
-        <h3 class="work-brand">Authority, on camera.</h3>
-        <span class="work-go">View brief <i>→</i></span>
-      </div>
-    </a>
-    <a class="work-tile tile-f reveal" href="#contact" data-cat="F&amp;B">
-      <img src="assets/work/work-06.jpg" alt="" loading="lazy" onload="this.classList.add('ok')" onerror="this.parentElement.classList.add('no-img');this.remove()" />
-      <div class="work-meta">
-        <span class="work-cat">F&amp;B</span>
-        <h3 class="work-brand">A menu, made to scroll-stop.</h3>
-        <span class="work-go">View brief <i>→</i></span>
-      </div>
-    </a>
-    <a class="work-tile tile-g reveal" href="#contact" data-cat="Emerging">
-      <img src="assets/work/work-07.jpg" alt="" loading="lazy" onload="this.classList.add('ok')" onerror="this.parentElement.classList.add('no-img');this.remove()" />
-      <div class="work-meta">
-        <span class="work-cat">Emerging Premium</span>
-        <h3 class="work-brand">A new brand, built on craft.</h3>
-        <span class="work-go">View brief <i>→</i></span>
-      </div>
-    </a>
-    <a class="work-tile tile-h reveal" href="#contact" data-cat="Lifestyle">
-      <img src="assets/work/work-08.jpg" alt="" loading="lazy" onload="this.classList.add('ok')" onerror="this.parentElement.classList.add('no-img');this.remove()" />
-      <div class="work-meta">
-        <span class="work-cat">Lifestyle</span>
-        <h3 class="work-brand">Editorial, not templated.</h3>
-        <span class="work-go">View brief <i>→</i></span>
-      </div>
-    </a>
-  </div>
-
-  <div class="work-foot reveal">
-    <span>Want the full portfolio?</span>
-    <a class="btn btn-ghost" href="#contact"><span>Request a case-study PDF</span></a>
-  </div>
-</section>
-
-<!-- MANIFESTO -->
-<section class="section manifesto" data-scene="manifesto">
-  <div class="section-head light">
-    <span class="section-num">11 / 12</span>
-    <span class="section-tag">Manifesto</span>
-  </div>
-  <div class="manifesto-stage">
-    <h2 class="manifesto-line">
-      <span>Stories that <em>move</em>.</span>
-      <span>Brands that <em>grow</em>.</span>
-    </h2>
-    <p class="manifesto-body reveal">Our tagline is also our operating standard. Every asset we publish has to be good enough to stop a scroll — and consistent enough to build a brand month after month. That is the whole promise. We keep it by treating your feed like a film set.</p>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section class="section contact" id="contact" data-scene="contact">
-  <div class="section-head">
-    <span class="section-num">12 / 12</span>
-    <span class="section-tag">Let's Begin</span>
-  </div>
-
-  <div class="contact-grid">
-    <div class="contact-text">
-      <h2 class="display reveal-stagger">
-        <span>Let's build</span>
-        <span>your <em>feed</em>.</span>
-      </h2>
-      <p class="lead reveal">Tell us your preferred tier and start date. A formal Statement of Work and invoice follow within one business day.</p>
-      <div class="contact-meta reveal">
-        <div><span class="k">Web</span><a href="https://unicrew.ae" target="_blank" rel="noreferrer">unicrew.ae</a></div>
-        <div><span class="k">Studio</span><address>Sharjah Publishing City Free Zone · Dubai, UAE</address></div>
-        <div><span class="k">Entity</span><span>Unicrew FZE · Creative Production House</span></div>
-      </div>
-    </div>
-
-    <form class="contact-form reveal" id="briefForm" novalidate>
-      <div class="field">
-        <label for="name">Your name</label>
-        <input id="name" name="name" type="text" required autocomplete="name" />
-      </div>
-      <div class="field">
-        <label for="brand">Brand</label>
-        <input id="brand" name="brand" type="text" required />
-      </div>
-      <div class="field">
-        <label for="email">Email</label>
-        <input id="email" name="email" type="email" required autocomplete="email" />
-      </div>
-      <div class="field">
-        <label>Preferred tier</label>
-        <div class="chip-group" role="radiogroup" aria-label="Preferred tier">
-          <label class="chip"><input type="radio" name="tier" value="essential" /><span>Essential</span></label>
-          <label class="chip"><input type="radio" name="tier" value="growth" checked /><span>Growth</span></label>
-          <label class="chip"><input type="radio" name="tier" value="dominance" /><span>Dominance</span></label>
-        </div>
-      </div>
-      <div class="field">
-        <label for="start">Preferred start</label>
-        <input id="start" name="start" type="month" />
-      </div>
-      <div class="field full">
-        <label for="brief">Brief (optional)</label>
-        <textarea id="brief" name="brief" rows="3" placeholder="A line about the brand and where you want to take it."></textarea>
-      </div>
-      <button class="btn btn-primary full" type="submit">
-        <span>Send brief</span>
-        <svg viewBox="0 0 24 24" width="14" height="14"><path d="M5 12h14M13 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
-      </button>
-      <div class="form-status" aria-live="polite"></div>
-    </form>
-  </div>
-</section>
-
-</main>
-
-<!-- FOOTER -->
-<footer class="footer">
-  <div class="footer-row">
-    <div class="footer-brand">
-      <svg viewBox="0 0 60 24" width="60" height="24" aria-hidden="true">
-        <text x="0" y="18" font-family="Fraunces, serif" font-size="20" font-weight="600" fill="currentColor">us</text>
-        <rect x="38" y="2" width="6" height="6" fill="#ff2a2a"/>
-      </svg>
-      <div>
-        <strong>Unicrew Socials</strong>
-        <span>Premium social media, built the way films are built.</span>
-      </div>
-    </div>
-    <nav class="footer-nav" aria-label="Footer">
-      <a href="#who">Who</a><a href="#how">How</a><a href="#standard">Standard</a><a href="#packages">Packages</a><a href="#process">Process</a><a href="#work">Work</a><a href="#contact">Contact</a>
-    </nav>
-  </div>
-  <div class="footer-base">
-    <span>© 2026 Unicrew FZE · Creative Production House</span>
-    <span>Sharjah Publishing City Free Zone · Dubai, UAE</span>
-    <span>unicrew.ae</span>
-  </div>
+<footer>
+  <span>UNICREW FZE <span class="red">·</span> Sharjah Publishing City Free Zone</span>
+  <span>Cinematic Social Content · UAE &amp; KSA</span><span>&copy; 2026 UNICREW</span>
 </footer>
 
 <script src="script.js" defer></script>
-</body>
-</html>
+</body></html>
