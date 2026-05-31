@@ -254,21 +254,23 @@ document.querySelectorAll('img[data-fallback], #heroImg').forEach(img => {
   if (img.complete && img.naturalWidth === 0) failImg(img);
 });
 
-/* ---------- SHOWREEL — click to play Vimeo ---------- */
+/* ---------- SHOWREEL — muted background loop (loads when in view) ---------- */
 (function(){
   const stage = document.getElementById('reelStage');
   if (!stage) return;
   const frame = stage.querySelector('.reel-frame');
   if (!frame || !frame.dataset.src) return;
-  let started = false;
-  function play(){
-    if (started) return;
-    started = true;
-    frame.src = frame.dataset.src; // load player only on demand, autoplays with sound (user gesture)
-    stage.classList.add('playing');
+  if (reduce) return; // respect reduced-motion: keep the static cinematic stage
+  let loaded = false;
+  function load(){
+    if (loaded) return;
+    loaded = true;
+    frame.addEventListener('load', () => stage.classList.add('video-ready'));
+    frame.src = frame.dataset.src; // background+muted+loop -> autoplays, no user gesture needed
   }
-  stage.addEventListener('click', play);
-  const btn = document.getElementById('reelPlay');
-  if (btn) btn.addEventListener('click', e => { e.stopPropagation(); play(); });
+  const obs = new IntersectionObserver(es => es.forEach(e => {
+    if (e.isIntersecting) { load(); obs.disconnect(); }
+  }), { rootMargin: '200px 0px' });
+  obs.observe(stage);
 })();
 })();
