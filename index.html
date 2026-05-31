@@ -66,12 +66,14 @@
 
 <!-- SHOWREEL -->
 <section class="reel" id="reel">
-  <!-- IMAGE PLACEHOLDER (showreel still) — to add: put <img alt="UNICREW SOCIALS showreel" data-fallback="1" src="YOUR_IMAGE_URL"> as the first child of .reel-stage below -->
-  <div class="reel-stage ph" id="reelStage">
-    <span class="ph-tag">Showreel still</span>
+  <!-- Vimeo showreel (click-to-play). To change the video, swap the ID 1114701126 in data-src below. -->
+  <div class="reel-stage" id="reelStage">
+    <iframe class="reel-frame" title="UNICREW SOCIALS showreel" src="about:blank"
+      data-src="https://player.vimeo.com/video/1114701126?autoplay=1&amp;title=0&amp;byline=0&amp;portrait=0&amp;dnt=1"
+      allow="autoplay; fullscreen; picture-in-picture" allowfullscreen loading="lazy"></iframe>
     <span class="reel-tc">REC ● 00:00:01:18</span><span class="reel-tc r2">UNICREW · 2026</span>
     <div class="reel-in">
-      <div class="play"><span class="tri"></span></div>
+      <button class="play" id="reelPlay" type="button" aria-label="Play showreel"><span class="tri"></span></button>
       <div class="rl-ey">The Studio · Showreel 2026</div>
       <h3>Film-grade craft,<br>built for the <span class="red">feed.</span></h3>
       <p>Director &amp; DOP-led · Shot across UAE &amp; KSA</p>

@@ -253,4 +253,22 @@ document.querySelectorAll('img[data-fallback], #heroImg').forEach(img => {
   img.addEventListener('error', () => failImg(img));
   if (img.complete && img.naturalWidth === 0) failImg(img);
 });
+
+/* ---------- SHOWREEL — click to play Vimeo ---------- */
+(function(){
+  const stage = document.getElementById('reelStage');
+  if (!stage) return;
+  const frame = stage.querySelector('.reel-frame');
+  if (!frame || !frame.dataset.src) return;
+  let started = false;
+  function play(){
+    if (started) return;
+    started = true;
+    frame.src = frame.dataset.src; // load player only on demand, autoplays with sound (user gesture)
+    stage.classList.add('playing');
+  }
+  stage.addEventListener('click', play);
+  const btn = document.getElementById('reelPlay');
+  if (btn) btn.addEventListener('click', e => { e.stopPropagation(); play(); });
+})();
 })();

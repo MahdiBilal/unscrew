@@ -289,3 +289,14 @@ footer .red{color:var(--red-br)}
 .strip .fr-ph .fr-tag{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
   text-align:center;padding:0 10px;font-family:var(--mono);font-size:9px;letter-spacing:.16em;
   text-transform:uppercase;color:#E8B4A0;opacity:.55}
+
+/* ---------- SHOWREEL VIDEO (Vimeo click-to-play) ---------- */
+.reel-stage{cursor:pointer}
+.reel-frame{position:absolute;inset:0;width:100%;height:100%;border:0;z-index:3;background:#000;
+  opacity:0;pointer-events:none;transition:opacity .6s ease}
+.reel-stage.playing{cursor:auto}
+.reel-stage.playing .reel-frame{opacity:1;pointer-events:auto}
+.reel-stage.playing .reel-in,
+.reel-stage.playing .reel-tc{opacity:0;pointer-events:none;transition:opacity .4s ease}
+button.play{cursor:pointer;background:transparent;padding:0;font:inherit;color:inherit;outline:none}
+button.play:focus-visible{box-shadow:0 0 0 3px rgba(224,82,76,.6)}
