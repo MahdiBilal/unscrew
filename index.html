@@ -9,6 +9,14 @@
 <link rel="stylesheet" href="styles.css">
 <link rel="icon" href="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23100D09'/%3E%3Ctext x='50%25' y='59%25' font-family='Anton,Impact,sans-serif' font-size='15' fill='%23F3EEE4' text-anchor='middle'%3EUS%3C/text%3E%3Crect x='23' y='6' width='4' height='4' fill='%23A8211C'/%3E%3C/svg%3E">
 </head>
+<!--
+  ┌──────────────────────────────────────────────────────────────────────┐
+  │  IMAGES ARE PLACEHOLDERS                                               │
+  │  All photos have been removed and replaced with on-theme placeholders.│
+  │  To add a real image later, find the matching "IMAGE PLACEHOLDER"      │
+  │  comment below and follow the one-line instruction next to it.        │
+  └──────────────────────────────────────────────────────────────────────┘
+-->
 <body>
 <div class="grain"></div><div class="progress" id="progress"></div>
 <div class="cur" id="cur"></div><div class="cur-d" id="curd"></div>
@@ -31,7 +39,8 @@
 </nav>
 
 <section class="hero" id="top">
-  <div class="hero-bg" data-parallax data-speed="0.18"><img id="heroImg" alt="Cinematic film set" src="https://dnznrvs05pmza.cloudfront.net/gemini/gemini-3-pro-image-preview/images/465bba5f-0464-499d-b236-43f8396528ad/Cinematic_establishing_shot_of_a_high_end_film_production_se.png?_jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlIYXNoIjoiNDYyODYyMDdlNzAyY2FhZSIsImJ1Y2tldCI6InJ1bndheS10YXNrLWFydGlmYWN0cyIsInN0YWdlIjoicHJvZCIsImV4cCI6MTc4MDI5NjQ1NX0.v-B7MRoS43aPDzl7SUgMuADrONp83nkTSpVOAwcR8ws"></div>
+  <!-- IMAGE PLACEHOLDER (hero background) — to add: put <img id="heroImg" alt="Cinematic film set" src="YOUR_IMAGE_URL"> inside the .hero-bg div below -->
+  <div class="hero-bg ph" data-parallax data-speed="0.18"></div>
   <div class="watermark" data-parallax data-speed="0.32">US</div>
   <span class="corner r">UNICREW FZE · EST. SHARJAH<br>CINEMATIC SOCIAL CONTENT</span>
   <div class="hero-in" data-hero-fade>
@@ -57,8 +66,9 @@
 
 <!-- SHOWREEL -->
 <section class="reel" id="reel">
-  <div class="reel-stage" id="reelStage">
-    <img alt="UNICREW SOCIALS showreel" data-fallback="1" data-parallax data-speed="0.12" src="https://dnznrvs05pmza.cloudfront.net/gemini/gemini-3-pro-image-preview/images/9a0a7f51-2ccc-40a5-93cd-cceab396d9cf/Cinematic_wide_shot_of_a_film_crew_working_on_a_sound_stage_.png?_jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlIYXNoIjoiNmM5NGFkZmE0YWM4YmZkOCIsImJ1Y2tldCI6InJ1bndheS10YXNrLWFydGlmYWN0cyIsInN0YWdlIjoicHJvZCIsImV4cCI6MTc4MDI5NzU5NH0.a3Pt2KhGIhKneptCm9y-d2lUNx7HsMCU0XEfsKEmEew">
+  <!-- IMAGE PLACEHOLDER (showreel still) — to add: put <img alt="UNICREW SOCIALS showreel" data-fallback="1" src="YOUR_IMAGE_URL"> as the first child of .reel-stage below -->
+  <div class="reel-stage ph" id="reelStage">
+    <span class="ph-tag">Showreel still</span>
     <span class="reel-tc">REC ● 00:00:01:18</span><span class="reel-tc r2">UNICREW · 2026</span>
     <div class="reel-in">
       <div class="play"><span class="tri"></span></div>
@@ -82,39 +92,40 @@
     <div><span class="ey r">Selected Work</span><h2 class="big r d1">The "Without<br>Marketing" series.</h2></div>
     <p class="lead r d2">A scroll-stopping campaign built to prove a single point — that marketing is what turns objects into obsession. One idea, every industry.</p>
   </div>
+  <!-- IMAGE PLACEHOLDERS (gallery) — to add a photo to any card: inside its .work-img div, put <img alt="…" loading="lazy" decoding="async" src="YOUR_IMAGE_URL"> and remove the "img-fail" class from that div -->
   <div class="gallery">
     <figure class="work r">
-      <div class="work-img" data-cat="Food &amp; Beverage"><img alt="Food &amp; Beverage" loading="lazy" decoding="async" data-fallback="1" src="https://dnznrvs05pmza.cloudfront.net/gemini/gemini-3-pro-image-preview/images/3c8894aa-b708-4d64-b51c-8d3e3a4eb3f0/A_single_gourmet_burger_presented_like_a_Renaissance_still_l.png?_jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlIYXNoIjoiMDY5OGQyNTc4ZWVkMmY4MiIsImJ1Y2tldCI6InJ1bndheS10YXNrLWFydGlmYWN0cyIsInN0YWdlIjoicHJvZCIsImV4cCI6MTc4MDI3MjIxNX0.VLegb8DJhWNE5TYxRRlZ7I-vpOTe8fiTEcJQW1UwXAA"></div>
+      <div class="work-img img-fail" data-cat="Food &amp; Beverage"></div>
       <figcaption><span class="cat">Food &amp; Beverage</span><span class="cl">Fuel became an experience.</span></figcaption>
     </figure>
     <figure class="work r">
-      <div class="work-img" data-cat="Apparel &amp; Retail"><img alt="Apparel &amp; Retail" loading="lazy" decoding="async" data-fallback="1" src="https://dnznrvs05pmza.cloudfront.net/gemini/gemini-3-pro-image-preview/images/df1762a2-b30a-4f74-98f5-dd6ffadfb010/A_single_luxury_tailored_garment__a_folded_cashmere_coat_dra.png?_jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlIYXNoIjoiMmYxMjM0NDBhNjFhZTYwMyIsImJ1Y2tldCI6InJ1bndheS10YXNrLWFydGlmYWN0cyIsInN0YWdlIjoicHJvZCIsImV4cCI6MTc4MDI5ODE3Nn0.gJvXCRSSOVzkBDbSlgF2J9vtJ1cN6vCZZ9gSYcn1LX8"></div>
+      <div class="work-img img-fail" data-cat="Apparel &amp; Retail"></div>
       <figcaption><span class="cat">Apparel &amp; Retail</span><span class="cl">A product became a statement.</span></figcaption>
     </figure>
     <figure class="work r">
-      <div class="work-img" data-cat="Art &amp; Culture"><img alt="Art &amp; Culture" loading="lazy" decoding="async" data-fallback="1" src="https://dnznrvs05pmza.cloudfront.net/gemini/gemini-3-pro-image-preview/images/79ed2b06-19d2-472d-b830-197918aa1caf/A_classical_white_marble_bust_of_a_youthful_figure_on_a_ston.png?_jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlIYXNoIjoiNDRhYWE4YTk3ZTZhYmNkZiIsImJ1Y2tldCI6InJ1bndheS10YXNrLWFydGlmYWN0cyIsInN0YWdlIjoicHJvZCIsImV4cCI6MTc4MDI0OTM4NX0.pMwe82wakIIjJEv027Mpz5cR7c9H5RjpeCkM7Sy4vd8"></div>
+      <div class="work-img img-fail" data-cat="Art &amp; Culture"></div>
       <figcaption><span class="cat">Art &amp; Culture</span><span class="cl">Reach is what makes it matter.</span></figcaption>
     </figure>
     <figure class="work r">
-      <div class="work-img" data-cat="Beauty &amp; Cosmetics"><img alt="Beauty &amp; Cosmetics" loading="lazy" decoding="async" data-fallback="1" src="https://dnznrvs05pmza.cloudfront.net/gemini/gemini-3-pro-image-preview/images/ade32fda-dcce-4cda-a15e-e898908d1f6b/A_single_luxury_perfume_bottle_of_amber_glass_on_a_polished_.png?_jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlIYXNoIjoiODYzZTJlMTZkMmZkMjNhMyIsImJ1Y2tldCI6InJ1bndheS10YXNrLWFydGlmYWN0cyIsInN0YWdlIjoicHJvZCIsImV4cCI6MTc4MDMwNTE3NH0.rM7OvFySVrRjsFUHH5eIruoXkMVrPDlsvQLctA6y9QU"></div>
+      <div class="work-img img-fail" data-cat="Beauty &amp; Cosmetics"></div>
       <figcaption><span class="cat">Beauty &amp; Cosmetics</span><span class="cl">Function became desire.</span></figcaption>
     </figure>
     <figure class="work r">
-      <div class="work-img" data-cat="Travel &amp; Tourism"><img alt="Travel &amp; Tourism" loading="lazy" decoding="async" data-fallback="1" src="https://dnznrvs05pmza.cloudfront.net/gemini/gemini-3-pro-image-preview/images/ff074ff2-3928-4f8a-a9e1-e001a107a79e/A_sweeping_desert_dune_landscape_at_golden_hour_with_a_dista.png?_jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlIYXNoIjoiZjlhOTdhNzIxNWI3NGYzMSIsImJ1Y2tldCI6InJ1bndheS10YXNrLWFydGlmYWN0cyIsInN0YWdlIjoicHJvZCIsImV4cCI6MTc4MDIzMzcxNH0.-VcNHD1lQmg6alOVVLnP_KC0HY_w9V2i21h1TvKRPos"></div>
+      <div class="work-img img-fail" data-cat="Travel &amp; Tourism"></div>
       <figcaption><span class="cat">Travel &amp; Tourism</span><span class="cl">A map became a bucket list.</span></figcaption>
     </figure>
     <figure class="work r">
-      <div class="work-img" data-cat="Fashion &amp; Icon"><img alt="Fashion &amp; Icon" loading="lazy" decoding="async" data-fallback="1" src="https://dnznrvs05pmza.cloudfront.net/gemini/gemini-3-pro-image-preview/images/076bf536-e655-4933-88d9-64d7c5ca05b4/An_elegant_figure_in_a_tailored_suit_walking_along_a_curved_.png?_jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlIYXNoIjoiNTRkNzQyZGEzYTAwZGM3NiIsImJ1Y2tldCI6InJ1bndheS10YXNrLWFydGlmYWN0cyIsInN0YWdlIjoicHJvZCIsImV4cCI6MTc4MDMxMTg5OH0.uWrL2KgTFjCxi4BVZdgeRede0EQKItHn96snubDdUwU"></div>
+      <div class="work-img img-fail" data-cat="Fashion &amp; Icon"></div>
       <figcaption><span class="cat">Fashion &amp; Icon</span><span class="cl">A name became a movement.</span></figcaption>
     </figure>
     <figure class="work r">
-      <div class="work-img" data-cat="Real Estate"><img alt="Real Estate" loading="lazy" decoding="async" data-fallback="1" src="https://dnznrvs05pmza.cloudfront.net/gemini/gemini-3-pro-image-preview/images/7a6644e8-cd7a-465f-8aad-d0cb867919c7/A_minimalist_luxury_architectural_interior__a_single_designe.png?_jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlIYXNoIjoiYzVlNWE0ZDkwNDllZmM1MCIsImJ1Y2tldCI6InJ1bndheS10YXNrLWFydGlmYWN0cyIsInN0YWdlIjoicHJvZCIsImV4cCI6MTc4MDI1NDI5N30.CLNqb4lMZdoxsL-Qjk13tIka9GnIu1jCTyWxAzXYKGk"></div>
+      <div class="work-img img-fail" data-cat="Real Estate"></div>
       <figcaption><span class="cat">Real Estate</span><span class="cl">Concrete became sold out.</span></figcaption>
     </figure>
   </div>
 </section>
 
-<!-- FILM STRIP -->
+<!-- FILM STRIP (placeholder frames generated by script.js) -->
 <div class="strip" id="strip"><div class="track" id="stripTrack"></div></div>
 
 <section class="services" id="services">
@@ -175,8 +186,9 @@
 <section class="lens" id="lens">
   <span class="ey dim r">Behind the Lens</span>
   <div class="lens-grid">
-    <div class="lens-media">
-      <img alt="Director and DOP led studio" loading="lazy" decoding="async" data-fallback="1" data-parallax data-speed="0.1" src="https://dnznrvs05pmza.cloudfront.net/gemini/gemini-3-pro-image-preview/images/9a0a7f51-2ccc-40a5-93cd-cceab396d9cf/Cinematic_wide_shot_of_a_film_crew_working_on_a_sound_stage_.png?_jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlIYXNoIjoiNmM5NGFkZmE0YWM4YmZkOCIsImJ1Y2tldCI6InJ1bndheS10YXNrLWFydGlmYWN0cyIsInN0YWdlIjoicHJvZCIsImV4cCI6MTc4MDI5NzU5NH0.a3Pt2KhGIhKneptCm9y-d2lUNx7HsMCU0XEfsKEmEew">
+    <!-- IMAGE PLACEHOLDER (behind the lens) — to add: put <img alt="Director and DOP led studio" loading="lazy" decoding="async" src="YOUR_IMAGE_URL"> inside .lens-media and remove the "img-fail" class -->
+    <div class="lens-media img-fail">
+      <span class="ph-tag">Behind-the-scenes image</span>
       <span class="tag">On set · UAE</span>
     </div>
     <div class="lens-copy">

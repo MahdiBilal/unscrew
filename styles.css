@@ -276,3 +276,16 @@ footer .red{color:var(--red-br)}
   .hero-bg img{opacity:.6!important;transform:none!important}
   [data-parallax]{transform:none!important}
 }
+
+/* ---------- IMAGE PLACEHOLDERS ---------- */
+.ph{position:relative}
+.ph-tag{position:absolute;z-index:4;font-family:var(--mono);font-size:10px;letter-spacing:.18em;
+  text-transform:uppercase;color:#E8B4A0;background:rgba(16,13,9,.5);
+  border:1px dashed rgba(232,180,160,.42);padding:7px 12px;backdrop-filter:blur(3px);
+  pointer-events:none;white-space:nowrap}
+.reel-stage .ph-tag{top:18px;left:50%;transform:translateX(-50%)}
+.lens-media .ph-tag{top:50%;left:50%;transform:translate(-50%,-50%)}
+.strip .fr-ph{background:linear-gradient(135deg,#241a12,#1c1610 60%,#3a1614)}
+.strip .fr-ph .fr-tag{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+  text-align:center;padding:0 10px;font-family:var(--mono);font-size:9px;letter-spacing:.16em;
+  text-transform:uppercase;color:#E8B4A0;opacity:.55}

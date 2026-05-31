@@ -221,16 +221,29 @@ if (!reduce) {
   }, { passive: true });
 }
 
-/* ---------- FILM STRIP — clone the gallery frames ---------- */
+/* ---------- FILM STRIP — placeholder frames (images removed) ---------- */
 (function(){
   const track = document.getElementById('stripTrack');
   if (!track) return;
-  const srcs = [...document.querySelectorAll('.gallery .work-img img')].map(i => i.getAttribute('src'));
-  const make = () => srcs.forEach(s => {
+  // Build from the gallery cells. If a real <img> is later added to a
+  // .work-img, the strip clones it; otherwise it shows a labelled placeholder.
+  const cells = [...document.querySelectorAll('.gallery .work-img')];
+  const list = cells.length ? cells : new Array(7).fill(null);
+  const make = () => list.forEach(cell => {
     const d = document.createElement('div'); d.className = 'fr';
-    const im = new Image(); im.src = s; im.setAttribute('data-fallback', '1');
-    im.addEventListener('error', () => failImg(im));
-    d.appendChild(im); track.appendChild(d);
+    const realImg = cell && cell.querySelector('img');
+    if (realImg && realImg.getAttribute('src')) {
+      const im = new Image(); im.src = realImg.getAttribute('src');
+      im.setAttribute('data-fallback', '1');
+      im.addEventListener('error', () => failImg(im));
+      d.appendChild(im);
+    } else {
+      d.classList.add('fr-ph');
+      const s = document.createElement('span'); s.className = 'fr-tag';
+      s.textContent = (cell && cell.getAttribute('data-cat')) || 'Image';
+      d.appendChild(s);
+    }
+    track.appendChild(d);
   });
   make(); make(); // duplicate for seamless loop
 })();
